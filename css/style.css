@@ -3,7 +3,10 @@ dark green: #00A300*/
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
+}
+html{
+    font-size: 10px;
 }
 .header {
     position: relative;
@@ -13,13 +16,14 @@ dark green: #00A300*/
     clip-path: polygon(0% 0%,100% 0%,100% 75vh,0% 100%);
 }
 body{
-    margin: 30px;
+    margin: 3rem;
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 .logo{
     position: absolute;
-    top:10px;
-    left: 10px;
+    top:1rem;
+    left: 1rem;
 }
 .text-box{
     position: absolute;
@@ -36,27 +40,27 @@ body{
 }
 .heading-primary-main{
  display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
     animation: moveInLeft 2s ease-out .2s;
 }
 .heading-primary-sub{
     display: block;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
-    letter-spacing: 20px;
+    letter-spacing: 2rem;
     animation: moveInRight 2s ease-out .2s;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 
 }
 @keyframes moveInLeft {
     0%{
         opacity: 0;
-   transform: translateX(-100px);
+   transform: translateX(-10rem);
     }
     70%{
-        transform: translateX(10px);
+        transform: translateX(1rem);
     }
     100%{
         opacity: 1;
@@ -66,10 +70,10 @@ body{
 @keyframes moveInRight {
     0%{
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
     70%{
-        transform: translateX(-10px);
+        transform: translateX(-1rem);
     }
     100%{
         opacity: 1;
@@ -80,8 +84,8 @@ body{
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 20px 40px;
-    border-radius: 100px;
+    padding: 2rem 4rem;
+    border-radius: 10rem;
     transition: all .4s;
    position: relative;
 
@@ -89,10 +93,10 @@ body{
 /**/
 
 .btn:hover{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 }
 .btn:active{
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
 }
 .btn-white{
     background-color: #ffff;
@@ -121,7 +125,7 @@ body{
 @keyframes moveInBottom {
     0%{
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(10rem);
     }
 
     100%{

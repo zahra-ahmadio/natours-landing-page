@@ -1,0 +1,7 @@
+@mixin clearfix {
+  &::after{
+    content: "";//we would not to show this element on the page
+    display: table;// the standard version of the clearfix
+    clear: both;
+  }
+}

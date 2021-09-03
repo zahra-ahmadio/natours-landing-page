@@ -43,8 +43,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-width: 400;
   line-height: 1.7;
-  padding: 3rem;
-  color: #fff; }
+  padding: 3rem; }
 
 .heading-primary {
   color: #fff;
@@ -62,6 +61,44 @@ body {
     letter-spacing: 2rem;
     animation: moveInRight 2s ease-out .2s;
     margin-bottom: 5rem; }
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewY(5deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem;
+  text-transform: none;
+  font-weight: 400; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -103,6 +140,25 @@ body {
   animation: moveInBottom 2s ease-out .75s;
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  font-size: 1.6rem;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #55c57a;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
 .header {
   position: relative;
   height: 95vh;
@@ -125,7 +181,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -135,7 +190,6 @@ body {
     clear: both; }
   .row .col-1-of-2 {
     width: calc((100% - 6rem)/2);
-    background-color: orangered;
     float: left; }
     .row .col-1-of-2:not(:last-child) {
       margin-right: 6rem; }
@@ -169,3 +223,8 @@ body {
     float: left; }
     .row .col-3-of-4:not(:last-child) {
       margin-right: 6rem; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20rem; }

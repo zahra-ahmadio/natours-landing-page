@@ -1,5 +1,5 @@
 .btn{
-  &:link,&:visited{
+  &,&:link,&:visited{
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
@@ -7,6 +7,9 @@
     border-radius: 10rem;
     transition: all .4s;
     position: relative;
+    ///booking button
+    border: none;
+
   }
   &::after {
     content: "";

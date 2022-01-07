@@ -15,10 +15,11 @@
     width: 11rem;
   }
   &__text-box{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    //position: absolute;
+    //top: 40%;
+    //left: 50%;
+    //transform: translate(-50%,-50%);
+    @include absCenter ;
     text-align: center;
   }
 
